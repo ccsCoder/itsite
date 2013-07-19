@@ -1,0 +1,101 @@
+<!--
+@Author: Neo
+Responsive web design for IT website.
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XYZ Solutions.</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/responsiveslides.css"/>
+        <link rel="stylesheet" href="css/myStyles.css"/>
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".responsiveSlides").responsiveSlides( {
+                        speed: 2000,
+                        namespace:'callbacks',
+                        pause:true
+                        //nav:true,
+                        //navContainer:'.callbacks_container'
+                        
+                });
+            });
+        </script>
+       
+    </head>
+    <body class='blackBack' ><!--style="background:url('images/bg.png');background-repeat: repeat-x,repeat-y"-->
+        <!-- Navigation Starts -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+            <ul class="nav">  
+                <li class="active offset3">  
+                    <a class="brand" href="#">XYZ Solutions</a>  
+                </li>  
+                <li><a href="#">About</a></li>  
+                <li><a href="#">Portfolio</a></li>  
+                <li><a href="#">Projects</a></li>  
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>Services<span class="caret"></span></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Medical Domain</a></li>
+                        <li><a href="#">Education Domain</a></li>
+                        <li><a href="#">Chemical Domain</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">Contact</a></li>  
+                
+            </ul> 
+            </div>
+        </div>
+        
+        <div class="container blackBack">
+            <div class="hero-unit blackBack">
+                <div class="callbacks_container">
+                <ul class="responsiveSlides">
+                    <li>
+                        <img src="images/1.jpg" alt="">
+                        <p class="caption">Know why we are the Experts...</p>
+                    </li>
+                    
+                    <li>
+                        <img src="images/2.jpg" alt="">
+                        <p class="caption">We rock!...</p>
+                    </li>
+                    <li>
+                        <img src="images/3.jpg" alt="">
+                        <p class="caption">Do business with us...</p>
+                    </li>
+                </ul>
+                <h1>XYZ Solutions</h1>
+                <p>We provide solutions in various domains including Medical, Education and Finance.</p>
+                <p><a class="btn btn-primary btn-large">Learn More &Gt;</a>   </p>
+                </div>
+            </div><!--.hero_unit-->
+            <div class="row">
+                <div class="span4">
+                    <h2>Medical Domain</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
+                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                </div><!--.span4-->
+                <div class="span4">
+                    <h2>Education Domain</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
+                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                </div><!--.span4-->
+                <div class="span4">
+                    <h2>Chemical Industry</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
+                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                </div><!--.span4-->
+            </div><!--.row-->
+        </div><!--.container-->
+    </body>
+</html>
