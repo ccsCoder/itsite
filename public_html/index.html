@@ -6,39 +6,48 @@ Responsive web design for IT website.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>XYZ Solutions.</title>
+        <title>Techo Flair Labs Solutions.</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/responsiveslides.css"/>
         <link rel="stylesheet" href="css/myStyles.css"/>
+        <link rel="stylesheet" href="css/jquery.share.css"/>
+        
         
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+        <script type="text/javascript" src="js/jquery.share.js"></script>
+        
         <script type="text/javascript">
             $(document).ready(function () {
                 $(".responsiveSlides").responsiveSlides( {
-                        speed: 2000,
+                        speed: 1000,
                         namespace:'callbacks',
-                        pause:true
+                        pause:false
                         //nav:true,
                         //navContainer:'.callbacks_container'
                         
                 });
+                $('#content').share({
+                    networks: ['facebook','pinterest','googleplus',
+                        'twitter','linkedin','tumblr','in1','email','stumbleupon','digg']
+                });
+
             });
         </script>
        
     </head>
-    <body class='blackBack' ><!--style="background:url('images/bg.png');background-repeat: repeat-x,repeat-y"-->
+    <body class='blackBack' >
         <!-- Navigation Starts -->
         <div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner">
             <ul class="nav">  
-                <li class="active offset3">  
-                    <a class="brand" href="#">XYZ Solutions</a>  
+                <li class="active offset2">  
+                    <a class="brand companyName" style="color: yellowgreen" href="#">Techo Flair Labs </a>  
                 </li>  
-                <li><a href="#">About</a></li>  
-                <li><a href="#">Portfolio</a></li>  
+                <li class="offset1"><a href="#">About</a></li>  
+                  
                 <li><a href="#">Projects</a></li>  
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -58,44 +67,62 @@ Responsive web design for IT website.
         
         <div class="container blackBack">
             <div class="hero-unit blackBack">
+                <!--<h2>Techo Flair Labs .</h2>-->
                 <div class="callbacks_container">
                 <ul class="responsiveSlides">
                     <li>
                         <img src="images/1.jpg" alt="">
-                        <p class="caption">Know why we are the Experts...</p>
+                        <p class="caption"><a href="#">Know how Techo Flair Labs can help you succeed...</a></p>
                     </li>
                     
                     <li>
                         <img src="images/2.jpg" alt="">
-                        <p class="caption">We rock!...</p>
+                        <p class="caption"><a href="#">Techo Flair Labs Rocks at Development...</a></p>
                     </li>
                     <li>
                         <img src="images/3.jpg" alt="">
-                        <p class="caption">Do business with us...</p>
+                        <p class="caption"><a href="#">Harvest benefits with Techo Flair Labs...</a></p>
                     </li>
                 </ul>
-                <h1>XYZ Solutions</h1>
-                <p>We provide solutions in various domains including Medical, Education and Finance.</p>
-                <p><a class="btn btn-primary btn-large">Learn More &Gt;</a>   </p>
+                
+<!--                <p>We provide solutions in various domains including Medical, Education and Finance.</p>
+                <p><a class="btn btn-primary btn-large">Learn More &Gt;</a>   </p>-->
                 </div>
             </div><!--.hero_unit-->
             <div class="row">
-                <div class="span4">
-                    <h2>Medical Domain</h2>
-                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
-                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                <div class="span3 offset1">
+                    <h4>Medical Domain</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor.</p>
+                    <p><a class="btn btn-info btn-inverse" href="#">More Info &Gt;</a>  </p>
                 </div><!--.span4-->
-                <div class="span4">
-                    <h2>Education Domain</h2>
-                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
-                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                <div class="span3 offset1">
+                    <h4>Education Domain</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor.</p>
+                    <p><a class="btn btn-info btn-inverse" href="#">More Info &Gt;</a>  </p>
                 </div><!--.span4-->
-                <div class="span4">
-                    <h2>Chemical Industry</h2>
-                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet </p>
-                    <p><a class="btn btn-info" href="#">More Info &Gt;</a>  </p>
+                <div class="span3 offset1">
+                    <h4>Chemical Industry</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor.</p>
+                    <p><a class="btn btn-info btn-inverse" href="#">More Info &Gt;</a>  </p>
                 </div><!--.span4-->
             </div><!--.row-->
+            <div class="row">
+                <div class="span3 offset1">
+                    <p>Tell your friends how Awesome we are !</p>
+                </div> 
+                
+            </div>
+            <div class="row">
+                <div class="span5 offset4" id="content">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="span6 offset4">
+                    <p class="footerText">@2013, Techo Flair Labs . All Rights Reserved.|&nbsp;<a class="companyName" href="mailto:info@technoflairlabs.com">info@technoflairlabs.com</a></p>
+                </div>
+            </div>
         </div><!--.container-->
+        
     </body>
 </html>

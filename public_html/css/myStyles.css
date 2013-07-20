@@ -11,6 +11,20 @@
     background-repeat: repeat;
 }
 
+.footerText {
+    color: white;
+    font-size:smaller;
+    margin-top: 20px;
+    
+}
+
+.companyName {
+    font-variant: small-caps;
+    /*font-size: larger;*/
+    color: yellowgreen;
+    font-style: italic;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
 /*
     responsive slides plugin styles
 */
@@ -35,7 +49,7 @@ body {
   -webkit-font-smoothing: antialiased;
   }*/
 
-h1 {
+/*h1 {
   font: 40px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-weight: 200;
@@ -44,17 +58,27 @@ h1 {
 h2 {
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 40px;
-  }
+  }*/
 
 #wrapper {
   padding: 20px;
   }
 
-p,h3,h4,pre {
+p {
+    color:lightslategray;
+}
+
+h2,h3,h4 {
+    color:darkgray;
+}
+
+p.caption,pre {
   text-align: center;
   max-width: 540px;
   margin: 0 auto 20px;
-  }
+  
+}
+
 
 .rslides {
   margin: 0 auto 40px;
@@ -113,6 +137,9 @@ a {
   color: #fff;
   text-decoration: none;
   }
+  a:hover {
+      color: orange;
+  }
 
 #download {
   background: #333;
@@ -139,11 +166,11 @@ a {
 
 /* Callback example */
 
-h3 {
+/*h3 {
   font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   color: #fff;
-  }
+  }*/
 
 .events {
   list-style: none;
@@ -151,6 +178,7 @@ h3 {
 
 .callbacks_container {
   margin-bottom: 50px;
+  margin-top: 30px;
   position: relative;
   float: left;
   width: 100%;
